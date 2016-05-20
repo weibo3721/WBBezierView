@@ -12,10 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = UIColor.yellowColor()
-        
-        let bezierView = WBBezierView(frame: CGRect(x: 0, y: 0, width: 375, height: 375))
+        let bezierView = WBBezierView(frame: UIScreen.mainScreen().bounds)
         bezierView.backgroundColor = UIColor.clearColor()
         bezierView.startPoint = CGPoint(x: 200, y: 200)
         bezierView.endPoint = CGPoint(x: 200, y: 200)
